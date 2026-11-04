@@ -1,0 +1,17 @@
+{
+  "appId": "local.mishal.triplog",
+  "appName": "יומן נסיעות",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "http",
+    "cleartext": true
+  },
+  "android": {
+    "allowMixedContent": true
+  },
+  "plugins": {
+    "SystemBars": {
+      "insetsHandling": "native"
+    }
+  }
+}
