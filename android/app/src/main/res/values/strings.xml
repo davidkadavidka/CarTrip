@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">יומן נסיעות</string>
+    <string name="title_activity_main">יומן נסיעות</string>
+    <string name="package_name">local.mishal.triplog</string>
+    <string name="custom_url_scheme">local.mishal.triplog</string>
+</resources>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#17406d">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="יומן נסיעות">
+<title>יומן נסיעות</title>
+<link rel="manifest" href="/static/app/manifest.webmanifest">
+<link rel="apple-touch-icon" href="/static/app/icon-180.png">
+<link rel="icon" href="/static/icon.svg">
+<link rel="stylesheet" href="/static/app.css">
+<link rel="stylesheet" href="/static/app/app.css">
+</head>
+<body class="driver">
+<header class="d-head app-head" id="head">
+  <div class="app-top">
+    <span class="org" id="org">יומן נסיעות</span>
+    <span class="conn" id="conn" hidden></span>
+  </div>
+  <div class="app-title" id="title">יומן נסיעות</div>
+  <div class="plate" id="plate" hidden></div>
+  <div class="desc" id="desc"></div>
+</header>
+<main class="d-wrap" id="app">
+  <div class="card center-msg"><div class="spinner"></div>טוען…</div>
+</main>
+<div class="scanner" id="scanner" hidden>
+  <video id="scanVideo" playsinline muted></video>
+  <div class="scan-frame"></div>
+  <div class="scan-hint">כוונו את המצלמה לקוד ה-QR שברכב</div>
+  <button class="btn big" id="scanCancel">ביטול</button>
+</div>
+<input type="file" id="photoInput" accept="image/*" capture="environment" hidden>
+<script src="/static/jsQR.js"></script>
+<script src="/static/app/app.js"></script>
+</body>
+</html>
